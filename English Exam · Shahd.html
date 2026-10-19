@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Exam ✨ Shahd</title>
+<style>
+:root{--bg1:#fdf2f8;--bg2:#ede9fe;--card:rgba(255,255,255,.72);--tx:#2a1f3d;--mut:#6b5f82;--pr:#8b5cf6;--pr2:#ec4899;--ok:#10b981;--no:#f43f5e;--bd:rgba(139,92,246,.18);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#1a1030;--bg2:#0f172a;--card:rgba(30,24,52,.7);--tx:#f5f0ff;--mut:#b4a8d0;--bd:rgba(167,139,250,.25)}}
+:root[data-theme="dark"]{--bg1:#1a1030;--bg2:#0f172a;--card:rgba(30,24,52,.7);--tx:#f5f0ff;--mut:#b4a8d0;--bd:rgba(167,139,250,.25)}
+*{box-sizing:border-box;margin:0}
+html,body{min-height:100%}
+body{font-family:"Cairo","Segoe UI",Tahoma,sans-serif;color:var(--tx);background:linear-gradient(135deg,var(--bg1),var(--bg2));background-attachment:fixed;overflow-x:hidden}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.45;z-index:0;animation:fl 14s ease-in-out infinite}
+.b1{width:320px;height:320px;background:#c4b5fd;top:-80px;right:-80px}
+.b2{width:280px;height:280px;background:#f9a8d4;bottom:-60px;left:-60px;animation-delay:-6s}
+@keyframes fl{50%{transform:translate(30px,40px) scale(1.15)}}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.p{position:absolute;bottom:-30px;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.wrap{position:relative;z-index:2;max-width:640px;margin:0 auto;padding:22px 16px 40px}
+.card{background:var(--card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--bd);border-radius:26px;padding:26px 22px;box-shadow:0 20px 50px -20px rgba(139,92,246,.45);animation:in .6s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes in{from{opacity:0;transform:translateY(26px) scale(.96)}}
+.hero{text-align:center}
+.big{font-size:64px;display:inline-block;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(6deg)}}
+h1{font-size:30px;margin:10px 0 6px;background:linear-gradient(90deg,var(--pr),var(--pr2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);line-height:1.9;margin-bottom:18px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.chips span{background:rgba(139,92,246,.12);border:1px solid var(--bd);padding:6px 12px;border-radius:99px;font-size:13px}
+button{font-family:inherit;cursor:pointer;border:0}
+.btn{background:linear-gradient(90deg,var(--pr),var(--pr2));color:#fff;font-size:17px;font-weight:700;padding:14px 34px;border-radius:99px;box-shadow:0 10px 25px -8px var(--pr2);transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.btn:hover{transform:translateY(-2px)}
+.top{display:flex;align-items:center;gap:12px;margin-bottom:16px;font-size:14px;color:var(--mut)}
+.bar{flex:1;height:10px;border-radius:9px;background:rgba(139,92,246,.15);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pr),var(--pr2));border-radius:9px;transition:width .7s cubic-bezier(.3,1.2,.4,1)}
+.tag{display:inline-block;font-size:12px;color:var(--pr);background:rgba(139,92,246,.12);padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.q{direction:ltr;text-align:left;font-size:21px;font-weight:700;line-height:1.6;margin-bottom:18px}
+.opts{display:grid;gap:10px;direction:ltr}
+.o{display:flex;align-items:center;gap:12px;text-align:left;background:var(--card);border:2px solid var(--bd);color:var(--tx);padding:13px 16px;border-radius:16px;font-size:17px;transition:.25s;animation:in .5s backwards}
+.o b{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(139,92,246,.14);font-size:14px;flex:none}
+.o:hover:not(:disabled){transform:translateX(6px);border-color:var(--pr)}
+.o.ok{border-color:var(--ok);background:rgba(16,185,129,.16);animation:pop .5s}
+.o.no{border-color:var(--no);background:rgba(244,63,94,.12);animation:shk .45s}
+.o:disabled{cursor:default}
+@keyframes pop{50%{transform:scale(1.04)}}
+@keyframes shk{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.rv{margin-top:18px;text-align:center;border-radius:20px;padding:18px;background:linear-gradient(135deg,rgba(139,92,246,.14),rgba(236,72,153,.14));border:1px solid var(--bd);animation:in .6s}
+.rv .e{font-size:52px;display:inline-block}
+.rv p{line-height:1.9;margin:6px 0 14px;font-size:16px}
+.rv .btn{font-size:15px;padding:11px 26px}
+.sc{font-size:64px;font-weight:800;background:linear-gradient(90deg,var(--pr),var(--pr2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.letter{margin:16px 0;padding:18px;border-radius:18px;background:rgba(236,72,153,.08);border:1px dashed var(--pr2);line-height:2;animation:in .8s .3s backwards}
+.e.a1{animation:bob 1.6s infinite}.e.a2{animation:spin 1.2s}.e.a3{animation:grow .9s cubic-bezier(.3,1.6,.5,1)}.e.a4{animation:bob 1s infinite}
+@keyframes spin{from{transform:rotate(-360deg) scale(0)}}
+@keyframes grow{from{transform:scale(0)}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div id="fx"></div>
+<div class="wrap" id="app"></div>
+<script>
+var Q=[
+["Grammar · Conditionals","If I ___ more free time, I would learn to paint.",["have","had","will have","would have"],1,"🌸","إجابة صح! زي الورد، شغلك بيكبر كل يوم وبيبقى أحلى 🌸","مش مشكلة! if + past → would. غلطة صغيرة وإنتي أقوى من كده 🌸"],
+["Grammar · Passive","The new library ___ by the students last week.",["is built","was built","has built","built"],1,"🚀","صح! ضربتي الهدف زي الصاروخ 🚀 كمّلي!","قربتي جدًا! past passive = was/were + V3. الصاروخ لسه طالع 🚀"],
+["Grammar · Reported speech","She said, “I saw the film yesterday.” → She said that she ___ the film the day before.",["saw","has seen","had seen","was seeing"],2,"⭐","ممتاز! إنتي نجمة بجد ⭐ والنجوم ما بتغلطش كتير!","حتى النجوم بتغلط! الصح had seen ⭐ وهتفتكريها المرة الجاية."],
+["Grammar · Relative clauses","The man ___ lives next door is a doctor.",["which","whose","who","whom"],2,"🦋","برافو! ذكاءك بيطير زي الفراشة 🦋","محصلش حاجة! who للأشخاص 🦋 الفراشة معاكي!"],
+["Grammar · Past perfect","By the time we arrived at the station, the train ___.",["left","had left","has left","was leaving"],1,"🌈","صح! بعد كل تعب بيجي قوس قزح، وده هيبقى حالك 🌈","كده تعلمتيها! had left (حصل قبل الوصول) 🌈 وبعد المطر قوس قزح."],
+["Grammar · Wishes","I wish I ___ speak French fluently.",["can","could","will","would"],1,"🎧","تمام! وسواء Hello! أو أي حاجة، إنتي بتفهمي الإنجليزي كويس 🎧","wish + could. ولسه فيه وقت تحسّني 🎧"],
+["Vocabulary","Which word means “trustworthy and dependable”?",["reliable","fragile","random","ancient"],0,"💎","صح! وإنتي كمان reliable، بتعتمدي على نفسك 💎","reliable = يُعتمد عليه. وإنتي أصلًا أثمن من الجوهرة 💎"],
+["Grammar · Verb patterns","He suggested ___ to the cinema after dinner.",["to go","go","going","went"],2,"🎈","جامد! suggest + V-ing، ومعلومة زي دي هتفرق في الامتحان الحقيقي 🎈","suggest + V-ing. خدي نفس عميق وكملي 🎈"],
+["Grammar · Agreement","Neither Ali nor his friends ___ at the party.",["was","is","were","are"],3,"🌙","صح! قربتي من الآخر، ركّزي شوية كمان 🌙","القاعدة: الفعل يتبع الاسم الأقرب (friends) → are. 🌙"],
+["Vocabulary · Synonyms","Choose the word closest in meaning to “enormous”.",["tiny","huge","quiet","narrow"],1,"👑","صح! آخر سؤال وإنتي خلصتي زي الملكة 👑","enormous = huge. ومهما حصل، إنتي تستاهلي التاج 👑"]
+];
+var app=document.getElementById("app"),fx=document.getElementById("fx"),i=0,score=0,L=["A","B","C","D"];
+function burst(list,n){for(var k=0;k<n;k++){var s=document.createElement("span");s.className="p";s.textContent=list[k%list.length];s.style.left=Math.random()*100+"%";s.style.fontSize=(14+Math.random()*22)+"px";s.style.animationDuration=(2.5+Math.random()*3)+"s";s.style.animationDelay=Math.random()*.6+"s";fx.appendChild(s);(function(x){setTimeout(function(){x.remove()},7000)})(s)}}
+function start(){app.innerHTML='<div class="card hero"><div class="big">📚</div><h1>English Exam · Shahd</h1><p class="sub">امتحان شامل على Unit 1 و Unit 2<br>٣ ثانوي · ١٠ أسئلة · اتعمل مخصوص ليكي<br>خدي نفس، اقري كويس، وإنتي قدها ✨</p><div class="chips"><span>⏱ براحتك</span><span>🎁 مفاجأة بعد كل سؤال</span><span>✨ ١٠ أسئلة</span></div><button class="btn" onclick="show()">يلا نبدأ 🚀</button></div>';burst(["💜","✨","⭐","🌸"],18)}
+function show(){var d=Q[i];var h='<div class="card"><div class="top"><span>'+(i+1)+' / '+Q.length+'</span><div class="bar"><i id="pb"></i></div><span>⭐ '+score+'</span></div><span class="tag">'+d[0]+'</span><div class="q">'+d[1]+'</div><div class="opts">';
+d[2].forEach(function(t,j){h+='<button class="o" style="animation-delay:'+j*.08+'s" onclick="pick('+j+')"><b>'+L[j]+'</b>'+t+'</button>'});
+h+='</div><div id="rv"></div></div>';app.innerHTML=h;setTimeout(function(){document.getElementById("pb").style.width=(i/Q.length*100)+"%"},50)}
+function pick(j){var d=Q[i],bs=document.querySelectorAll(".o"),ok=j===d[3];bs.forEach(function(b){b.disabled=true});bs[d[3]].classList.add("ok");if(!ok)bs[j].classList.add("no");if(ok){score++;burst(["🎉","✨","💜","⭐",d[4]],26)}else burst([d[4],"💫"],10);
+document.getElementById("pb").style.width=((i+1)/Q.length*100)+"%";
+var a="a"+(1+i%4),last=i===Q.length-1;
+document.getElementById("rv").innerHTML='<div class="rv"><div class="e '+a+'">'+d[4]+'</div><p>'+(ok?d[5]:d[6])+'</p><button class="btn" onclick="'+(last?"fin()":"nx()")+'">'+(last?"شوفي نتيجتك 🎁":"السؤال اللي بعده ➜")+'</button></div>';document.getElementById("rv").scrollIntoView({behavior:"smooth",block:"center"})}
+function nx(){i++;show()}
+function fin(){var m=score>=9?"مستوى ممتاز بجد! 🏆":score>=7?"شغل جامد جدًا، قربتي من القمة! 🌟":score>=5?"بداية حلوة، شوية مراجعة وهتبقي نار 🔥":"مفيش مشكلة، المراجعة هتفرق وإنتي قدها 💪";
+app.innerHTML='<div class="card hero"><div class="big">🏆</div><h1>خلصتي الامتحان!</h1><div class="sc">'+score+' / '+Q.length+'</div><p class="sub">'+m+'</p><div class="letter">أنا فخور بيكي أوي 💜<br>السنة دي سنة التعب والتركيز، وكل حاجة حلوة بتستنى اللي بيتعب.<br>اجتهدي، وإنتي هتوصلي لأي مكان نفسك فيه ✨</div><button class="btn" onclick="i=0;score=0;start()">ارجعي من الأول 🔁</button></div>';burst(["🎉","💜","✨","🌸","⭐","🎊"],70)}
+start();
+</script>
+</body>
+</html>
